@@ -81,8 +81,6 @@ public class BSNotification: NSObject {
             constant: -24.0
             ))
         
-        NSLog("frame : \(notificationView.frame.origin.x),\(notificationView.frame.origin.y) \(notificationView.frame.size.width)x\(notificationView.frame.size.height)")
-        
         let messageLabel = UILabel()
         messageLabel.translatesAutoresizingMaskIntoConstraints = false
         messageLabel.numberOfLines = 0
