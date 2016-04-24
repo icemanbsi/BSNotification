@@ -1,0 +1,6 @@
+framework module Pods_BSNotification_Example {
+  umbrella header "Pods-BSNotification_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

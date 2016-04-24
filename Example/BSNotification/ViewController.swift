@@ -7,9 +7,13 @@
 //
 
 import UIKit
+import BSNotification
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var btnClickMe: UIButton!
+    var isTop = false
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -20,5 +24,15 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func btnClickMeTouched(sender: AnyObject) {
+        if self.isTop {
+            BSNotification.show("Click Me Button Touched", viewController: self, position: .Top)
+        }
+        else{
+            BSNotification.show("Click Me Button Touched", viewController: self)
+        }
+        
+        self.isTop = !self.isTop
+    }
 }
 

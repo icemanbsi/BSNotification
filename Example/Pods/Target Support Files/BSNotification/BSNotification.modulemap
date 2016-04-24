@@ -1,0 +1,6 @@
+framework module BSNotification {
+  umbrella header "BSNotification-umbrella.h"
+
+  export *
+  module * { export * }
+}

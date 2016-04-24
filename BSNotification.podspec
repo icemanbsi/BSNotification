@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = "BSNotification"
-  s.version          = "0.1.0"
-  s.summary          = "A short description of BSNotification."
+  s.version          = "1.0.0"
+  s.summary          = "Pop up notification like toast in Android"
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,14 +18,15 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
+Pop up notification like toast in Android
                        DESC
 
-  s.homepage         = "https://github.com/<GITHUB_USERNAME>/BSNotification"
+  s.homepage         = "https://github.com/icemanbsi/BSNotification"
   # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
   s.license          = 'MIT'
   s.author           = { "Bobby Stenly" => "iceman.bsi@gmail.com" }
-  s.source           = { :git => "https://github.com/<GITHUB_USERNAME>/BSNotification.git", :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.source           = { :git => "https://github.com/icemanbsi/BSNotification.git", :tag => s.version.to_s }
+  # s.social_media_url = 'https://twitter.com/icemanbsi
 
   s.ios.deployment_target = '8.0'
 

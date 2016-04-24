@@ -1,0 +1,24 @@
+{
+  "name": "BSNotification",
+  "version": "0.1.0",
+  "summary": "A short description of BSNotification.",
+  "description": "",
+  "homepage": "https://github.com/<GITHUB_USERNAME>/BSNotification",
+  "license": "MIT",
+  "authors": {
+    "Bobby Stenly": "iceman.bsi@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/<GITHUB_USERNAME>/BSNotification.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "BSNotification/Classes/**/*",
+  "resource_bundles": {
+    "BSNotification": [
+      "BSNotification/Assets/*.png"
+    ]
+  }
+}

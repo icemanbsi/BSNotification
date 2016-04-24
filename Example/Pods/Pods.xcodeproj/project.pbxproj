@@ -1,0 +1,782 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2E0D4AD8284985620000E6139996D040 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
+		69526D4016410D6DC87080D57F8681F0 /* Pods-BSNotification_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2B8890DB50E02108460808F747963AAF /* Pods-BSNotification_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8ACC75C4513986F6A116D7D5742995C8 /* Pods-BSNotification_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 91BDD139938F014703F790602CC0ED37 /* Pods-BSNotification_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		94E660B11CCCAF8100A54CAD /* BSNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E660B01CCCAF8100A54CAD /* BSNotification.swift */; };
+		96A54C2BE5415E8DE29FC0566CF45EEE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
+		97EDFA8950FFDFC2B0ACBC25551E9B0E /* BSNotification.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 07997EC4D8676C4A92DCC6E83678DBCC /* BSNotification.bundle */; };
+		9E80C750E234CF6D0977A171B18543E8 /* BSNotification-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A13CA565CB84300922AD7BEF5EE6B936 /* BSNotification-dummy.m */; };
+		B174180C558D6D4F65FA3820D53FB329 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
+		D979D4BAC3A4A33DA427765781C15D39 /* Pods-BSNotification_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FA26AC8E47E7E86FB4DFA10C46D62660 /* Pods-BSNotification_Tests-dummy.m */; };
+		E5EDC10A3073EEEC3F21DBD0EE102803 /* Pods-BSNotification_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 519B96BDE6F2CC7BD6F7487A2D9B3D0F /* Pods-BSNotification_Example-dummy.m */; };
+		F699C81A47F53703B7F45E22F907E051 /* BSNotification-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EF4452570DF10814107CE5B734D7EE5D /* BSNotification-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BD8590F79D0EEC0E7D6246E839F464A7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 921206484A333D6BD89A97D708E38740;
+			remoteInfo = BSNotification;
+		};
+		CDCA9D3B1819DBD2211849879F252ADB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 651E8E0BE939DBE27FB420BFF4EA9BD0;
+			remoteInfo = "BSNotification-BSNotification";
+		};
+		FDC56631DEBF1CC9539B3EA7341B79A1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 921206484A333D6BD89A97D708E38740;
+			remoteInfo = BSNotification;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		07997EC4D8676C4A92DCC6E83678DBCC /* BSNotification.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BSNotification.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		1761D4CBABB0C2ACBFBE445E79ECB7E0 /* Pods-BSNotification_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-BSNotification_Tests.modulemap"; sourceTree = "<group>"; };
+		2B8890DB50E02108460808F747963AAF /* Pods-BSNotification_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-BSNotification_Tests-umbrella.h"; sourceTree = "<group>"; };
+		2C9D5C621B274D0955CC29AF6EBB77BC /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		3F502E2E2148FC4CD40786829CD856AB /* Pods-BSNotification_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BSNotification_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		4AEC5014DEE34044A880D18AB14CA3DD /* Pods-BSNotification_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BSNotification_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		519B96BDE6F2CC7BD6F7487A2D9B3D0F /* Pods-BSNotification_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-BSNotification_Example-dummy.m"; sourceTree = "<group>"; };
+		56B13E9C2B0637BBD7431C16A13C8F0F /* Pods-BSNotification_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BSNotification_Example.release.xcconfig"; sourceTree = "<group>"; };
+		5F6E70A571B81C86E3F6E1C5E7666A6D /* Pods-BSNotification_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BSNotification_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		611A86C4CBDFF218922DD77D4562A6FB /* BSNotification.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BSNotification.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		615CB40F4DB7280501D3D7E3D0292F36 /* Pods_BSNotification_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BSNotification_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		706BA345DAD59AF45E13512881302D77 /* Pods-BSNotification_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BSNotification_Example-resources.sh"; sourceTree = "<group>"; };
+		7AA9B4D0CDA71AAF5BB05D74F42D467F /* Pods-BSNotification_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-BSNotification_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		813F60676F65EDF7D051B68616ADDE28 /* Pods-BSNotification_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-BSNotification_Example.modulemap"; sourceTree = "<group>"; };
+		8B23645CE7D7F589623F918CCBB5EAAA /* Pods-BSNotification_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BSNotification_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		91BDD139938F014703F790602CC0ED37 /* Pods-BSNotification_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-BSNotification_Example-umbrella.h"; sourceTree = "<group>"; };
+		94E660B01CCCAF8100A54CAD /* BSNotification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BSNotification.swift; sourceTree = "<group>"; };
+		94F887B91F856123CAE736F602333A45 /* Pods-BSNotification_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BSNotification_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		9CC2F53C42D99206961D45F3F55FDF14 /* Pods-BSNotification_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BSNotification_Example-frameworks.sh"; sourceTree = "<group>"; };
+		9FB13480FE82C0299D9FDAC85D06F8C9 /* BSNotification-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BSNotification-prefix.pch"; sourceTree = "<group>"; };
+		A13CA565CB84300922AD7BEF5EE6B936 /* BSNotification-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "BSNotification-dummy.m"; sourceTree = "<group>"; };
+		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		BDA5DD9B685C32335DE88B33BFDE48CD /* Pods_BSNotification_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BSNotification_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4101813F1D28559285009D82677325C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E41CB3286E02A9164975B03B49193CD2 /* Pods-BSNotification_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BSNotification_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		EA31701793C649518F8E07DC40ACE6A2 /* BSNotification.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BSNotification.xcconfig; sourceTree = "<group>"; };
+		ED1993A3B802B122381D9E185CB1E9E1 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF203E3C9656BEF03208D8ED0B93CF99 /* Pods-BSNotification_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-BSNotification_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		EF4452570DF10814107CE5B734D7EE5D /* BSNotification-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BSNotification-umbrella.h"; sourceTree = "<group>"; };
+		F3F0C839D4582C22E214C1C14D7351F9 /* BSNotification.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = BSNotification.modulemap; sourceTree = "<group>"; };
+		FA26AC8E47E7E86FB4DFA10C46D62660 /* Pods-BSNotification_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-BSNotification_Tests-dummy.m"; sourceTree = "<group>"; };
+		FAB5ECF26E472AAE3E209F2FA4046C0A /* Pods-BSNotification_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BSNotification_Tests-resources.sh"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		952C347E0B807129116D2C6453C67731 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E0D4AD8284985620000E6139996D040 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A35960F46F6B0422C88A3FA7F9B650C0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B174180C558D6D4F65FA3820D53FB329 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBEBE96FB71693B7189E51F352D6C06D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96A54C2BE5415E8DE29FC0566CF45EEE /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F014F57E905E16CEE1A465D6167AA315 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		41BE740CE18693FAD65D0C2D0A51A8BB /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				AEFC24CC74EBDEFA83F27820EC3B3CFB /* Pods-BSNotification_Example */,
+				51C78FFE21A0986270D379F33814CC08 /* Pods-BSNotification_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		51C78FFE21A0986270D379F33814CC08 /* Pods-BSNotification_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				2C9D5C621B274D0955CC29AF6EBB77BC /* Info.plist */,
+				1761D4CBABB0C2ACBFBE445E79ECB7E0 /* Pods-BSNotification_Tests.modulemap */,
+				7AA9B4D0CDA71AAF5BB05D74F42D467F /* Pods-BSNotification_Tests-acknowledgements.markdown */,
+				94F887B91F856123CAE736F602333A45 /* Pods-BSNotification_Tests-acknowledgements.plist */,
+				FA26AC8E47E7E86FB4DFA10C46D62660 /* Pods-BSNotification_Tests-dummy.m */,
+				3F502E2E2148FC4CD40786829CD856AB /* Pods-BSNotification_Tests-frameworks.sh */,
+				FAB5ECF26E472AAE3E209F2FA4046C0A /* Pods-BSNotification_Tests-resources.sh */,
+				2B8890DB50E02108460808F747963AAF /* Pods-BSNotification_Tests-umbrella.h */,
+				4AEC5014DEE34044A880D18AB14CA3DD /* Pods-BSNotification_Tests.debug.xcconfig */,
+				8B23645CE7D7F589623F918CCBB5EAAA /* Pods-BSNotification_Tests.release.xcconfig */,
+			);
+			name = "Pods-BSNotification_Tests";
+			path = "Target Support Files/Pods-BSNotification_Tests";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
+				EA0CFF0E55DBF6103A1745CF419F1D10 /* Development Pods */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				D75D9A03A28A5B1970EC27FF57B05CF7 /* Products */,
+				41BE740CE18693FAD65D0C2D0A51A8BB /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		AEFC24CC74EBDEFA83F27820EC3B3CFB /* Pods-BSNotification_Example */ = {
+			isa = PBXGroup;
+			children = (
+				D4101813F1D28559285009D82677325C /* Info.plist */,
+				813F60676F65EDF7D051B68616ADDE28 /* Pods-BSNotification_Example.modulemap */,
+				EF203E3C9656BEF03208D8ED0B93CF99 /* Pods-BSNotification_Example-acknowledgements.markdown */,
+				E41CB3286E02A9164975B03B49193CD2 /* Pods-BSNotification_Example-acknowledgements.plist */,
+				519B96BDE6F2CC7BD6F7487A2D9B3D0F /* Pods-BSNotification_Example-dummy.m */,
+				9CC2F53C42D99206961D45F3F55FDF14 /* Pods-BSNotification_Example-frameworks.sh */,
+				706BA345DAD59AF45E13512881302D77 /* Pods-BSNotification_Example-resources.sh */,
+				91BDD139938F014703F790602CC0ED37 /* Pods-BSNotification_Example-umbrella.h */,
+				5F6E70A571B81C86E3F6E1C5E7666A6D /* Pods-BSNotification_Example.debug.xcconfig */,
+				56B13E9C2B0637BBD7431C16A13C8F0F /* Pods-BSNotification_Example.release.xcconfig */,
+			);
+			name = "Pods-BSNotification_Example";
+			path = "Target Support Files/Pods-BSNotification_Example";
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BF6342C8B29F4CEEA088EFF7AB4DE362 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BF6342C8B29F4CEEA088EFF7AB4DE362 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		CAD13F557F779FA954C9F70DB8D6323B /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F3F0C839D4582C22E214C1C14D7351F9 /* BSNotification.modulemap */,
+				EA31701793C649518F8E07DC40ACE6A2 /* BSNotification.xcconfig */,
+				A13CA565CB84300922AD7BEF5EE6B936 /* BSNotification-dummy.m */,
+				9FB13480FE82C0299D9FDAC85D06F8C9 /* BSNotification-prefix.pch */,
+				EF4452570DF10814107CE5B734D7EE5D /* BSNotification-umbrella.h */,
+				ED1993A3B802B122381D9E185CB1E9E1 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/BSNotification";
+			sourceTree = "<group>";
+		};
+		D344F56A9CB4A42AF21C0CF566689852 /* BSNotification */ = {
+			isa = PBXGroup;
+			children = (
+				E39C2A2F09CC330EA22F4D6493235137 /* BSNotification */,
+				CAD13F557F779FA954C9F70DB8D6323B /* Support Files */,
+			);
+			name = BSNotification;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		D75D9A03A28A5B1970EC27FF57B05CF7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				07997EC4D8676C4A92DCC6E83678DBCC /* BSNotification.bundle */,
+				611A86C4CBDFF218922DD77D4562A6FB /* BSNotification.framework */,
+				615CB40F4DB7280501D3D7E3D0292F36 /* Pods_BSNotification_Example.framework */,
+				BDA5DD9B685C32335DE88B33BFDE48CD /* Pods_BSNotification_Tests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E088815C48EAB68331D6D624A5498DCA /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				94E660B01CCCAF8100A54CAD /* BSNotification.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		E39C2A2F09CC330EA22F4D6493235137 /* BSNotification */ = {
+			isa = PBXGroup;
+			children = (
+				E088815C48EAB68331D6D624A5498DCA /* Classes */,
+			);
+			path = BSNotification;
+			sourceTree = "<group>";
+		};
+		EA0CFF0E55DBF6103A1745CF419F1D10 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D344F56A9CB4A42AF21C0CF566689852 /* BSNotification */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		3A013B44F94FDCBA44974547FDE9B117 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F699C81A47F53703B7F45E22F907E051 /* BSNotification-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE50F0CF406FC92F884772B0E624AC13 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8ACC75C4513986F6A116D7D5742995C8 /* Pods-BSNotification_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED930CEF37926B9FF15901AC2897CEE1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				69526D4016410D6DC87080D57F8681F0 /* Pods-BSNotification_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		60EBEEB5345A2B98CDD1CEF7F9E9C3BB /* Pods-BSNotification_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C97DD2BE3997F78849166B3B33365D0C /* Build configuration list for PBXNativeTarget "Pods-BSNotification_Tests" */;
+			buildPhases = (
+				36B8EE29FA27438868A1A16059450A26 /* Sources */,
+				EBEBE96FB71693B7189E51F352D6C06D /* Frameworks */,
+				ED930CEF37926B9FF15901AC2897CEE1 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0374E2F33FC92EA82D9DC50876C72A85 /* PBXTargetDependency */,
+			);
+			name = "Pods-BSNotification_Tests";
+			productName = "Pods-BSNotification_Tests";
+			productReference = BDA5DD9B685C32335DE88B33BFDE48CD /* Pods_BSNotification_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		651E8E0BE939DBE27FB420BFF4EA9BD0 /* BSNotification-BSNotification */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0805DB93DCCE2FD629BB3A2B162D3133 /* Build configuration list for PBXNativeTarget "BSNotification-BSNotification" */;
+			buildPhases = (
+				6839414B90A720E7EE6B8C60F3A0FB08 /* Sources */,
+				F014F57E905E16CEE1A465D6167AA315 /* Frameworks */,
+				2EA0CCCA3BFD8BF8CE9FD24E1981F78F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "BSNotification-BSNotification";
+			productName = "BSNotification-BSNotification";
+			productReference = 07997EC4D8676C4A92DCC6E83678DBCC /* BSNotification.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		921206484A333D6BD89A97D708E38740 /* BSNotification */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0E15C8D54FFBC876F23A7EBCA0814DF0 /* Build configuration list for PBXNativeTarget "BSNotification" */;
+			buildPhases = (
+				852687923C4D26CF13CC167F23427631 /* Sources */,
+				A35960F46F6B0422C88A3FA7F9B650C0 /* Frameworks */,
+				C4E03CF9BBE99D646ED7431AB654606A /* Resources */,
+				3A013B44F94FDCBA44974547FDE9B117 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DB46E2BF11B9F234062DF05CAF146D76 /* PBXTargetDependency */,
+			);
+			name = BSNotification;
+			productName = BSNotification;
+			productReference = 611A86C4CBDFF218922DD77D4562A6FB /* BSNotification.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		9C7F32E1119C7A8635F8B582BB0065AB /* Pods-BSNotification_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E58184E30EAA659446CA85EC9753149A /* Build configuration list for PBXNativeTarget "Pods-BSNotification_Example" */;
+			buildPhases = (
+				A31168B93918876036A69D2B40B333C9 /* Sources */,
+				952C347E0B807129116D2C6453C67731 /* Frameworks */,
+				BE50F0CF406FC92F884772B0E624AC13 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BBDD971BAD62CDE0439CA43261C886EB /* PBXTargetDependency */,
+			);
+			name = "Pods-BSNotification_Example";
+			productName = "Pods-BSNotification_Example";
+			productReference = 615CB40F4DB7280501D3D7E3D0292F36 /* Pods_BSNotification_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = D75D9A03A28A5B1970EC27FF57B05CF7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				921206484A333D6BD89A97D708E38740 /* BSNotification */,
+				651E8E0BE939DBE27FB420BFF4EA9BD0 /* BSNotification-BSNotification */,
+				9C7F32E1119C7A8635F8B582BB0065AB /* Pods-BSNotification_Example */,
+				60EBEEB5345A2B98CDD1CEF7F9E9C3BB /* Pods-BSNotification_Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2EA0CCCA3BFD8BF8CE9FD24E1981F78F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4E03CF9BBE99D646ED7431AB654606A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				97EDFA8950FFDFC2B0ACBC25551E9B0E /* BSNotification.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		36B8EE29FA27438868A1A16059450A26 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D979D4BAC3A4A33DA427765781C15D39 /* Pods-BSNotification_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6839414B90A720E7EE6B8C60F3A0FB08 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		852687923C4D26CF13CC167F23427631 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E80C750E234CF6D0977A171B18543E8 /* BSNotification-dummy.m in Sources */,
+				94E660B11CCCAF8100A54CAD /* BSNotification.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A31168B93918876036A69D2B40B333C9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E5EDC10A3073EEEC3F21DBD0EE102803 /* Pods-BSNotification_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0374E2F33FC92EA82D9DC50876C72A85 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = BSNotification;
+			target = 921206484A333D6BD89A97D708E38740 /* BSNotification */;
+			targetProxy = FDC56631DEBF1CC9539B3EA7341B79A1 /* PBXContainerItemProxy */;
+		};
+		BBDD971BAD62CDE0439CA43261C886EB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = BSNotification;
+			target = 921206484A333D6BD89A97D708E38740 /* BSNotification */;
+			targetProxy = BD8590F79D0EEC0E7D6246E839F464A7 /* PBXContainerItemProxy */;
+		};
+		DB46E2BF11B9F234062DF05CAF146D76 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "BSNotification-BSNotification";
+			target = 651E8E0BE939DBE27FB420BFF4EA9BD0 /* BSNotification-BSNotification */;
+			targetProxy = CDCA9D3B1819DBD2211849879F252ADB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		045165392801501373673CFD11F44828 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8B23645CE7D7F589623F918CCBB5EAAA /* Pods-BSNotification_Tests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-BSNotification_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-BSNotification_Tests/Pods-BSNotification_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_BSNotification_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		10DE1947DAC0ED28F6C0A9F9BD75D546 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1182A4DFEBD1DFF19C6F57D1AD7C864F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5F6E70A571B81C86E3F6E1C5E7666A6D /* Pods-BSNotification_Example.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-BSNotification_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-BSNotification_Example/Pods-BSNotification_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_BSNotification_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		29EE85C6B03F94D8C0C1091A633F4B2E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EA31701793C649518F8E07DC40ACE6A2 /* BSNotification.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = BSNotification;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		552D02D5BA751AC2E8790D2811D496CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		6B3E205E160C115D2457208E8E55C661 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EA31701793C649518F8E07DC40ACE6A2 /* BSNotification.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/BSNotification/BSNotification-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/BSNotification/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/BSNotification/BSNotification.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = BSNotification;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		80C7B824C709893AC7634E202335C600 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 56B13E9C2B0637BBD7431C16A13C8F0F /* Pods-BSNotification_Example.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-BSNotification_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-BSNotification_Example/Pods-BSNotification_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_BSNotification_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B3171D9AC29F14DF08070264DD4CC332 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4AEC5014DEE34044A880D18AB14CA3DD /* Pods-BSNotification_Tests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-BSNotification_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-BSNotification_Tests/Pods-BSNotification_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_BSNotification_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		CF6B69BAD2F20282302300863F5978BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EA31701793C649518F8E07DC40ACE6A2 /* BSNotification.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/BSNotification/BSNotification-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/BSNotification/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/BSNotification/BSNotification.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = BSNotification;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E9B8CDD99DED8F6F67378C72AAC67E63 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EA31701793C649518F8E07DC40ACE6A2 /* BSNotification.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = BSNotification;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0805DB93DCCE2FD629BB3A2B162D3133 /* Build configuration list for PBXNativeTarget "BSNotification-BSNotification" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E9B8CDD99DED8F6F67378C72AAC67E63 /* Debug */,
+				29EE85C6B03F94D8C0C1091A633F4B2E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0E15C8D54FFBC876F23A7EBCA0814DF0 /* Build configuration list for PBXNativeTarget "BSNotification" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6B3E205E160C115D2457208E8E55C661 /* Debug */,
+				CF6B69BAD2F20282302300863F5978BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				552D02D5BA751AC2E8790D2811D496CA /* Debug */,
+				10DE1947DAC0ED28F6C0A9F9BD75D546 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C97DD2BE3997F78849166B3B33365D0C /* Build configuration list for PBXNativeTarget "Pods-BSNotification_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B3171D9AC29F14DF08070264DD4CC332 /* Debug */,
+				045165392801501373673CFD11F44828 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E58184E30EAA659446CA85EC9753149A /* Build configuration list for PBXNativeTarget "Pods-BSNotification_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1182A4DFEBD1DFF19C6F57D1AD7C864F /* Debug */,
+				80C7B824C709893AC7634E202335C600 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

@@ -1,0 +1,14 @@
+PODS:
+  - BSNotification (0.1.0)
+
+DEPENDENCIES:
+  - BSNotification (from `../`)
+
+EXTERNAL SOURCES:
+  BSNotification:
+    :path: ../
+
+SPEC CHECKSUMS:
+  BSNotification: c38a0816b6cb02fedd4b0d12aa009b0d25e9c418
+
+COCOAPODS: 0.39.0

@@ -1,0 +1,6 @@
+framework module Pods_BSNotification_Tests {
+  umbrella header "Pods-BSNotification_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}
