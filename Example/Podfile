@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'BSNotification_Example', :exclusive => true do
+  pod 'BSNotification', :path => '../'
+end
+
+target 'BSNotification_Tests', :exclusive => true do
+  pod 'BSNotification', :path => '../'
+
+  
+end
