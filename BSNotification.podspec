@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-Pop up notification like toast in Android
+Pop up notification like toast in Android. This notification will shown only for 5 seconds. You can show it at the bottom or top of you view controller.
                        DESC
 
   s.homepage         = "https://github.com/icemanbsi/BSNotification"
