@@ -32,7 +32,7 @@ Pop up notification like toast in Android. This notification will shown only for
 
   s.source_files = 'BSNotification/Classes/**/*'
   s.resource_bundles = {
-    'BSNotification' => ['BSNotification/Assets/*.png']
+    # 'BSNotification' => ['BSNotification/Assets/*.png']
   }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
