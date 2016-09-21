@@ -24,9 +24,9 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-    @IBAction func btnClickMeTouched(sender: AnyObject) {
+    @IBAction func btnClickMeTouched(_ sender: AnyObject) {
         if self.isTop {
-            BSNotification.show("Click Me Button Touched", viewController: self, position: .Top)
+            BSNotification.show("Click Me Button Touched", viewController: self, position: .top)
         }
         else{
             BSNotification.show("Click Me Button Touched", viewController: self)

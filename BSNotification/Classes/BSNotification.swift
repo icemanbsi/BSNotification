@@ -11,30 +11,30 @@
 import UIKit
 
 public enum BSNotificationPosition {
-    case Top;
-    case Bottom;
+    case top;
+    case bottom;
 }
 
-public class BSNotification: NSObject {
+open class BSNotification: NSObject {
     
-    public static func show(message: String, viewController: UIViewController) {
-        BSNotification.show(message, viewController: viewController, position: BSNotificationPosition.Bottom)
+    open static func show(_ message: String, viewController: UIViewController) {
+        BSNotification.show(message, viewController: viewController, position: BSNotificationPosition.bottom)
     }
     
-    public static func show(message: String, viewController: UIViewController, position: BSNotificationPosition) {
+    open static func show(_ message: String, viewController: UIViewController, position: BSNotificationPosition) {
         let notificationView: UIView = UIView()
         notificationView.translatesAutoresizingMaskIntoConstraints = false
         notificationView.layer.cornerRadius = 10
         notificationView.backgroundColor = UIColor(white: 0, alpha: 0.7)
         viewController.view.addSubview(notificationView)
         
-        if position == BSNotificationPosition.Top {
+        if position == BSNotificationPosition.top {
             viewController.view.addConstraint(NSLayoutConstraint(
                 item: notificationView,
-                attribute: NSLayoutAttribute.Top,
-                relatedBy: NSLayoutRelation.Equal,
+                attribute: NSLayoutAttribute.top,
+                relatedBy: NSLayoutRelation.equal,
                 toItem: viewController.view,
-                attribute: NSLayoutAttribute.Top,
+                attribute: NSLayoutAttribute.top,
                 multiplier: 1.0,
                 constant: 50.0
                 ))
@@ -42,10 +42,10 @@ public class BSNotification: NSObject {
         else{
             viewController.view.addConstraint(NSLayoutConstraint(
                 item: notificationView,
-                attribute: NSLayoutAttribute.Bottom,
-                relatedBy: NSLayoutRelation.Equal,
+                attribute: NSLayoutAttribute.bottom,
+                relatedBy: NSLayoutRelation.equal,
                 toItem: viewController.view,
-                attribute: NSLayoutAttribute.Bottom,
+                attribute: NSLayoutAttribute.bottom,
                 multiplier: 1.0,
                 constant: -30.0
                 ))
@@ -53,30 +53,30 @@ public class BSNotification: NSObject {
         
         viewController.view.addConstraint(NSLayoutConstraint(
             item: notificationView,
-            attribute: NSLayoutAttribute.CenterX,
-            relatedBy: NSLayoutRelation.Equal,
+            attribute: NSLayoutAttribute.centerX,
+            relatedBy: NSLayoutRelation.equal,
             toItem: viewController.view,
-            attribute: NSLayoutAttribute.CenterX,
+            attribute: NSLayoutAttribute.centerX,
             multiplier: 1.0,
             constant: 0.0
             ))
         
         viewController.view.addConstraint(NSLayoutConstraint(
             item: notificationView,
-            attribute: NSLayoutAttribute.Leading,
-            relatedBy: NSLayoutRelation.GreaterThanOrEqual,
+            attribute: NSLayoutAttribute.leading,
+            relatedBy: NSLayoutRelation.greaterThanOrEqual,
             toItem: viewController.view,
-            attribute: NSLayoutAttribute.Leading,
+            attribute: NSLayoutAttribute.leading,
             multiplier: 1.0,
             constant: 24.0
             ))
         
         viewController.view.addConstraint(NSLayoutConstraint(
             item: notificationView,
-            attribute: NSLayoutAttribute.Trailing,
-            relatedBy: NSLayoutRelation.LessThanOrEqual,
+            attribute: NSLayoutAttribute.trailing,
+            relatedBy: NSLayoutRelation.lessThanOrEqual,
             toItem: viewController.view,
-            attribute: NSLayoutAttribute.Trailing,
+            attribute: NSLayoutAttribute.trailing,
             multiplier: 1.0,
             constant: -24.0
             ))
@@ -85,72 +85,72 @@ public class BSNotification: NSObject {
         messageLabel.translatesAutoresizingMaskIntoConstraints = false
         messageLabel.numberOfLines = 0
         messageLabel.text = message
-        messageLabel.textAlignment = NSTextAlignment.Center
+        messageLabel.textAlignment = NSTextAlignment.center
         messageLabel.textColor = UIColor(white: 1, alpha: 1)
         messageLabel.font = UIFont(name: messageLabel.font.fontName, size: 12)
         notificationView.addSubview(messageLabel)
         
         notificationView.addConstraint(NSLayoutConstraint(
             item: messageLabel,
-            attribute: NSLayoutAttribute.Top,
-            relatedBy: NSLayoutRelation.Equal,
+            attribute: NSLayoutAttribute.top,
+            relatedBy: NSLayoutRelation.equal,
             toItem: notificationView,
-            attribute: NSLayoutAttribute.Top,
+            attribute: NSLayoutAttribute.top,
             multiplier: 1.0,
             constant: 8.0
             ))
         
         notificationView.addConstraint(NSLayoutConstraint(
             item: messageLabel,
-            attribute: NSLayoutAttribute.Bottom,
-            relatedBy: NSLayoutRelation.Equal,
+            attribute: NSLayoutAttribute.bottom,
+            relatedBy: NSLayoutRelation.equal,
             toItem: notificationView,
-            attribute: NSLayoutAttribute.Bottom,
+            attribute: NSLayoutAttribute.bottom,
             multiplier: 1.0,
             constant: -8.0
             ))
         
         notificationView.addConstraint(NSLayoutConstraint(
             item: messageLabel,
-            attribute: NSLayoutAttribute.Leading,
-            relatedBy: NSLayoutRelation.Equal,
+            attribute: NSLayoutAttribute.leading,
+            relatedBy: NSLayoutRelation.equal,
             toItem: notificationView,
-            attribute: NSLayoutAttribute.Leading,
+            attribute: NSLayoutAttribute.leading,
             multiplier: 1.0,
             constant: 8.0
             ))
         
         notificationView.addConstraint(NSLayoutConstraint(
             item: messageLabel,
-            attribute: NSLayoutAttribute.Trailing,
-            relatedBy: NSLayoutRelation.Equal,
+            attribute: NSLayoutAttribute.trailing,
+            relatedBy: NSLayoutRelation.equal,
             toItem: notificationView,
-            attribute: NSLayoutAttribute.Trailing,
+            attribute: NSLayoutAttribute.trailing,
             multiplier: 1.0,
             constant: -8.0
             ))
         
         notificationView.alpha = 0
-        viewController.view.bringSubviewToFront(notificationView)
+        viewController.view.bringSubview(toFront: notificationView)
         UIView.beginAnimations(nil, context: nil)
         UIView.setAnimationBeginsFromCurrentState(true)
         notificationView.alpha = 1
         UIView.commitAnimations()
         
-        NSTimer.scheduledTimerWithTimeInterval(5, target: self, selector: #selector(BSNotification.hide(_:)), userInfo: notificationView, repeats: false)
+        Timer.scheduledTimer(timeInterval: 5, target: self, selector: #selector(BSNotification.hide(_:)), userInfo: notificationView, repeats: false)
     }
     
-    static func hide(timer: NSTimer) {
+    static func hide(_ timer: Timer) {
         if let BSNotificationView: UIView = timer.userInfo as? UIView {
             UIView.beginAnimations(nil, context: nil)
             UIView.setAnimationBeginsFromCurrentState(true)
             BSNotificationView.alpha = 0
             UIView.commitAnimations()
-            NSTimer.scheduledTimerWithTimeInterval(0.5, target: self, selector: #selector(BSNotification.remove(_:)), userInfo: BSNotificationView, repeats: false)
+            Timer.scheduledTimer(timeInterval: 0.5, target: self, selector: #selector(BSNotification.remove(_:)), userInfo: BSNotificationView, repeats: false)
         }
     }
     
-    static func remove(timer: NSTimer) {
+    static func remove(_ timer: Timer) {
         if let BSNotificationView: UIView = timer.userInfo as? UIView {
             BSNotificationView.removeFromSuperview()
         }
